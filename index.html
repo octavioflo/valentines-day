@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine?</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #ffccd5;
+            color: #d6336c;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 3em;
+        }
+        .heart {
+            font-size: 5em;
+            color: red;
+            animation: heartbeat 1s infinite alternate;
+        }
+        @keyframes heartbeat {
+            from { transform: scale(1); }
+            to { transform: scale(1.2); }
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 25px;
+            font-size: 1.5em;
+            background-color: #d6336c;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #b71c48;
+        }
+    </style>
+</head>
+<body>
+    <h1>Will You Be My Valentine?</h1>
+    <div class="heart">❤️</div>
+    <p>Click below to answer!</p>
+    <a href="#" class="button" onclick="alert('Yay! I love you! ❤️')">Yes!</a>
+    <a href="#" class="button" style="background-color: gray;" onclick="alert('No way, you have to say yes! 😘')">No</a>
+</body>
+</html>
