@@ -22,8 +22,11 @@
             height: auto;
         }
         iframe {
-            max-width: 100%;
-            height: auto;
+            max-width: 100%;         /* Ensure the iframe is responsive */
+            height: 150px;           /* Set a default height for desktop */
+            width: 100%;             /* Ensure it takes up full width on mobile */
+            border: none;
+            margin-top: 20px;
         }
         .heart {
             font-size: 5em;
